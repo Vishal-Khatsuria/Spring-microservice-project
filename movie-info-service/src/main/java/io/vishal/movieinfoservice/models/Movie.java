@@ -3,16 +3,23 @@ package io.vishal.movieinfoservice.models;
 public class Movie {
 	
 	private String movieId;
+	private String desc;
 	private String name;
-	
-	public Movie(String movieId, String name) {
-		this.movieId = movieId;
-		this.name = name;
-	}
 	
 	public Movie() {
 	}
-
+	
+	public Movie(String movieId, String desc, String name) {
+		this.movieId = movieId;
+		this.desc = desc;
+		this.name = name;
+	}
+	public String getDesc() {
+		return desc;
+	}
+	public void setDesc(String desc) {
+		this.desc = desc;
+	}
 	public String getMovieId() {
 		return movieId;
 	}
